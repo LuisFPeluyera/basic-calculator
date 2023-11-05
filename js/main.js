@@ -1,11 +1,15 @@
 "use strict"
-//TODO   need to work fix edge cases like a user trying to input more than one arithmetic symbol
+//TODO   need to work on edge cases like a user trying to input more than one arithmetic symbol
 let equation = "";
 $(".key").on("click",(e)=>{
 
     equation += e.target.value;
-
-    $(".display").html(equation);
+    if(equation.length === 25) {
+        $(".display").html("Error");
+        equation = "";
+    } else {
+        $(".display").html(equation);
+    }
 });
 
 $("#reset").on("click",()=>{

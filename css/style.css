@@ -9,10 +9,10 @@
 }
 .display {
     height: 6vh;
+    max-width: 264px;
 }
 
 .key, #reset {
     width: 6vh;
     height: 6vh;
-
 }
