@@ -1,0 +1,18 @@
+
+.page-wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+.calculator, .display, button {
+    border-radius: 50px;
+}
+.display {
+    height: 6vh;
+}
+
+.key, #reset {
+    width: 6vh;
+    height: 6vh;
+
+}
