@@ -1,10 +1,10 @@
 "use strict"
-//TODO   need to work on edge cases like a user trying to input more than one arithmetic symbol
 let equation = "";
 $(".key").on("click",(e)=>{
-
+    const regex = /.*[+-/*]{2}.*/;
     equation += e.target.value;
-    if(equation.length === 25) {
+
+    if(equation.length === 25 || regex.test(equation)){
         $(".display").html("Error");
         equation = "";
     } else {
